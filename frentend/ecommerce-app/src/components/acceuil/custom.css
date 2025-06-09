@@ -1,0 +1,30 @@
+.custom-gradient {
+    background: linear-gradient(135deg, #ecfdf5 0%, #ffffff 50%, #ecfdf5 100%);
+  }
+  
+  .shadow-hover {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  
+  .shadow-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  }
+  
+  .rotate-img {
+    transform: rotate(-3deg);
+    transition: transform 0.5s ease;
+  }
+  
+  .rotate-img:hover {
+    transform: rotate(0);
+  }
+  
+  .icon-container {
+    transition: background-color 0.3s ease;
+  }
+  
+  .feature-card:hover .icon-container {
+    background-color: rgba(16, 185, 129, 0.2) !important;
+  }

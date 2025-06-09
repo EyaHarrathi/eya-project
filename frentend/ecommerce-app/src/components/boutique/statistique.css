@@ -1,0 +1,237 @@
+.dashboard-container {
+    padding-bottom: var(--space-3);
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
+  
+  .dashboard-header h3 {
+    margin: 0;
+  }
+  
+  .dashboard-actions {
+    display: flex;
+    gap: var(--space-2);
+  }
+  
+  .time-range-selector {
+    display: flex;
+    background: var(--neutral-200);
+    border-radius: 8px;
+    padding: 4px;
+  }
+  
+  .time-range-selector button {
+    background: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--transition-fast);
+  }
+  
+  .time-range-selector button.active {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .chart-container {
+    padding: var(--space-1) 0;
+  }
+  
+  .stat-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .stat-card-content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-normal);
+  }
+  
+  .stat-card-primary .stat-icon {
+    background: rgba(95, 161, 226, 0.15);
+    color: var(--primary-600);
+  }
+  
+  .stat-card-secondary .stat-icon {
+    background: rgba(179, 165, 226, 0.15);
+    color: var(--secondary-500);
+  }
+  
+  .stat-card-accent .stat-icon {
+    background: rgba(255, 144, 118, 0.15);
+    color: var(--accent-500);
+  }
+  
+  .stat-card-success .stat-icon {
+    background: rgba(76, 175, 80, 0.15);
+    color: var(--success-500);
+  }
+  
+  .stat-card-warning .stat-icon {
+    background: rgba(249, 199, 79, 0.15);
+    color: var(--warning-500);
+  }
+  
+  .stat-card-error .stat-icon {
+    background: rgba(239, 71, 111, 0.15);
+    color: var(--error-500);
+  }
+  
+  .stat-card::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 0.08;
+    transition: all 0.5s ease;
+  }
+  
+  .stat-card-primary::before {
+    background: var(--primary-500);
+  }
+  
+  .stat-card-secondary::before {
+    background: var(--secondary-500);
+  }
+  
+  .stat-card-accent::before {
+    background: var(--accent-500);
+  }
+  
+  .stat-card-success::before {
+    background: var(--success-500);
+  }
+  
+  .stat-card-warning::before {
+    background: var(--warning-500);
+  }
+  
+  .stat-card-error::before {
+    background: var(--error-500);
+  }
+  
+  .stat-card:hover::before {
+    transform: scale(4);
+  }
+  
+  .stat-value-sm {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 4px;
+  }
+  
+  .customer-stats {
+    display: flex;
+    margin-top: var(--space-2);
+    gap: var(--space-3);
+  }
+  
+  .customer-stat-item {
+    flex: 1;
+  }
+  
+  .recent-orders-table {
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  .table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--neutral-200);
+  }
+  
+  .table th {
+    color: var(--neutral-600);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .status-badge.completed {
+    background: rgba(76, 175, 80, 0.15);
+    color: var(--success-500);
+  }
+  
+  .status-badge.processing {
+    background: rgba(249, 199, 79, 0.15);
+    color: var(--warning-500);
+  }
+  
+  .status-badge.shipped {
+    background: rgba(95, 161, 226, 0.15);
+    color: var(--primary-600);
+  }
+  
+  .status-badge.cancelled {
+    background: rgba(239, 71, 111, 0.15);
+    color: var(--error-500);
+  }
+  
+  .view-all-btn {
+    background: none;
+    border: none;
+    color: var(--primary-600);
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .time-range-selector button {
+      padding: 6px 10px;
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-2);
+    }
+    
+    .time-range-selector {
+      width: 100%;
+      justify-content: space-between;
+    }
+    
+    .time-range-selector button {
+      flex: 1;
+      text-align: center;
+    }
+  }

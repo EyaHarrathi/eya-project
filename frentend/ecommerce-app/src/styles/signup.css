@@ -1,0 +1,136 @@
+
+.container.mt-4 {
+  width: 100%;
+  display: flex;
+  
+}
+
+.carde {
+  background: rgba(220, 220, 220, 0.85) !important; /* Light grey with transparency */
+  backdrop-filter: blur(5px); /* Adds glass effect */
+  border: 1px solid  #fdfcfce0(255, 255, 255, 0.2); /* Subtle white border */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  max-width: 600px;
+  margin: 20px ;
+  
+}
+/* Form fields styling */
+.form-control-lg {
+  background-color: rgba(240, 240, 240, 0.897) !important;
+  border: 1px solid rgba(200, 200, 200, 0.5) !important;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.form-control-lg:focus {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(76, 175, 80, 0.5) !important;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1) !important;
+}
+
+.form-select-lg {
+  background-color: rgba(240, 240, 240, 0.7) !important;
+  border: 1px solid rgba(252, 249, 249, 0.884) !important;
+}
+
+/* Input group additions */
+.input-group-text {
+  background-color: rgba(240, 240, 240, 0.7) !important;
+  border: 1px solid rgba(236, 235, 235, 0.849) !important;
+  color: #666;
+}
+
+/* Password toggle buttons */
+.btn-outline-secondary {
+  background-color: rgba(240, 240, 240, 0.7) !important;
+  border: 1px solid rgba(250, 248, 248, 0.795) !important;
+  color: #666 !important;
+}
+
+.btn-outline-secondary:hover {
+  background-color: rgba(230, 230, 230, 0.9) !important;
+}
+
+/* Placeholder styling */
+::placeholder {
+  color: rgba(102, 102, 102, 0.7) !important;
+}
+
+/* Checkbox styling */
+.form-check-input {
+  border: 1px solid rgba(248, 247, 247, 0.753) !important;
+  background-color: rgba(240, 240, 240, 0.7) !important;
+}
+
+.form-check-input:checked {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+
+/* Image positioning */
+.bottom-right-image {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  max-width: 150px;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #4caf50 !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  background-color: #45a049 !important;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+.modal-actions {
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-actions button:first-child {
+  background: #ccc;
+}
+
+.modal-actions button:last-child {
+  background: #007bff;
+  color: white;
+}

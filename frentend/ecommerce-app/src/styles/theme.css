@@ -1,0 +1,164 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --accent-color: #10b981;
+    --text-color: #333333;
+    --background-color: #f8f9fa;
+    --card-background: #ffffff;
+    --border-color: #dee2e6;
+    --input-background: #ffffff;
+    --input-border: #ced4da;
+    --input-text: #212529;
+    --header-background: #ffffff;
+    --sidebar-background: #f8f9fa;
+    --sidebar-active: #e9ecef;
+    --transition-speed: 0.3s;
+  }
+  
+  /* Base styles with transitions */
+  body {
+    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  /* Light theme (default) */
+  body.light-theme {
+    --text-color: #333333;
+    --background-color: #f8f9fa;
+    --card-background: #ffffff;
+    --border-color: #dee2e6;
+    --input-background: #ffffff;
+    --input-border: #ced4da;
+    --input-text: #212529;
+    --header-background: #ffffff;
+    --sidebar-background: #f8f9fa;
+    --sidebar-active: #e9ecef;
+  }
+  
+  /* Dark theme */
+  body.dark-theme {
+    --text-color: #f8f9fa;
+    --background-color: #121212;
+    --card-background: #212529;
+    --border-color: #343a40;
+    --input-background: #343a40;
+    --input-border: #495057;
+    --input-text: #f8f9fa;
+    --header-background: #212529;
+    --sidebar-background: #212529;
+    --sidebar-active: #343a40;
+  }
+  
+  /* Bootstrap overrides */
+  .card {
+    background-color: var(--card-background);
+    border-color: var(--border-color);
+    transition: background-color var(--transition-speed) ease, border-color var(--transition-speed) ease;
+  }
+  
+  .form-control,
+  .form-select {
+    background-color: var(--input-background);
+    border-color: var(--input-border);
+    color: var(--input-text);
+    transition: background-color var(--transition-speed) ease, border-color var(--transition-speed) ease, color
+      var(--transition-speed) ease;
+  }
+  
+  .input-group-text {
+    background-color: var(--input-background);
+    border-color: var(--input-border);
+    color: var(--input-text);
+    transition: background-color var(--transition-speed) ease, border-color var(--transition-speed) ease, color
+      var(--transition-speed) ease;
+  }
+  
+  .nav-tabs .nav-link {
+    color: var(--text-color);
+    transition: color var(--transition-speed) ease;
+  }
+  
+  .nav-tabs .nav-link.active {
+    background-color: var(--card-background);
+    border-color: var(--border-color) var(--border-color) var(--card-background);
+    color: var(--text-color);
+    transition: background-color var(--transition-speed) ease, border-color var(--transition-speed) ease, color
+      var(--transition-speed) ease;
+  }
+  
+  .table {
+    color: var(--text-color);
+    transition: color var(--transition-speed) ease;
+  }
+  
+  .modal-content {
+    background-color: var(--card-background);
+    border-color: var(--border-color);
+    transition: background-color var(--transition-speed) ease, border-color var(--transition-speed) ease;
+  }
+  
+  /* Custom theme colors */
+  .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+  
+  .bg-primary {
+    background-color: var(--primary-color) !important;
+  }
+  
+  .text-primary {
+    color: var(--primary-color) !important;
+  }
+  
+  .border-primary {
+    border-color: var(--primary-color) !important;
+  }
+  
+  /* Custom components styling */
+  .sidebar {
+    background-color: var(--sidebar-background);
+    transition: background-color var(--transition-speed) ease;
+  }
+  
+  .sidebar .nav-link.active {
+    background-color: var(--sidebar-active);
+    transition: background-color var(--transition-speed) ease;
+  }
+  
+  .header {
+    background-color: var(--header-background);
+    transition: background-color var(--transition-speed) ease;
+  }
+  
+  /* Specific component overrides */
+  .dropdown-menu {
+    background-color: var(--card-background);
+    border-color: var(--border-color);
+    transition: background-color var(--transition-speed) ease, border-color var(--transition-speed) ease;
+  }
+  
+  .dropdown-item {
+    color: var(--text-color);
+    transition: color var(--transition-speed) ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: var(--sidebar-active);
+    transition: background-color var(--transition-speed) ease;
+  }
+  
+  .list-group-item {
+    background-color: var(--card-background);
+    border-color: var(--border-color);
+    color: var(--text-color);
+    transition: background-color var(--transition-speed) ease, border-color var(--transition-speed) ease, color
+      var(--transition-speed) ease;
+  }
+  
